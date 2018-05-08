@@ -1,0 +1,70 @@
+/*Css styles for my layout*/
+
+body{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-rows: 100px 100px 100px 100px;
+      grid-template-columns: 1fr 1fr 1fr;
+
+        }
+/*styling my header*/
+header{
+      display: grid;
+      grid-column: 1/4;
+      background-color: green;
+}
+
+/*styling my nav*/
+nav{
+    display: grid;
+    grid-column: 1/2;
+    background-color: green;
+}
+
+/*styling my section*/
+section{
+        display: grid;
+        grid-column: 2/4;
+        background-color:green;
+}
+
+/*styling my articles*/
+article{
+        background-color: green;
+}
+
+/*styling my footer*/
+footer{
+       display: grid;
+       grid-column: 1/4;
+       background-color: green;
+}
+
+/*Adding some responsive design*/
+/*Responsive design for a mobile device*/
+@media only screen and (min-width:360px) {
+        header,nav,section,article,footer{
+                                          background-color: red;
+        }
+}
+
+/*Responsive design for a tablet device*/
+@media only screen and (min-width:768px) {
+        header,nav,section,article,footer{
+                                    background-color: blue;
+  }
+}
+
+/*RESPONSIVE DESIGN FOR A LARGE DESKTOP*/
+@media only screen and (min-width:992px) {
+         header,nav,section,article,footer{
+                                    background-color: orange;
+  }
+}
+
+/*Responsive design for desktop*/
+@media only screen and (min-width: 1200px) {
+        header,nav,section,article,footer{
+                                    background-color: green;
+  }
+}
